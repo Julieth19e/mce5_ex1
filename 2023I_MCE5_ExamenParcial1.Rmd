@@ -61,7 +61,7 @@ $$Ho$$La fase adulta de las plantas depende de la facilitación para su superviv
 Replique el diseño realizado en el artículo en localidades del Ecuador y genere el archivo **rarespecies.csv**. 
 
 ```{r crd_anfibios}
-sitios = c("Loreto", "Francisco de Orellana", "Joya de los Sachas" "Lagoagrio")
+sitios = c("Loreto", "Francisco de Orellana", "Joya de los Sachas" "Limoncocha")
 ```
 
 **Respuesta:**
