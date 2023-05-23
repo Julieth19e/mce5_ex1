@@ -50,30 +50,30 @@ En el estudio realizado por <a href="https://doi.org/10.1111/jvs.13185">Sanches 
 
 ## Para su potencial investigación ¿Cuál sería su hipótesis ? (Explique)
 
-**Respuesta**
-$$H0$$La facilitación interviene en la conservación de especies raras.
-$$Ha$$Las especies raras dependen del mecanismo de facilitación para su sobrevivencia.  
+**Respuesta
+$$Ha$$La facilitación interviene en la supervivencia de la especies de plantas en la etapa madura.
+$$Ho$$La fase adulta de las plantas depende de la facilitación para su supervivencia**
 
-*Explicación: La facilitación es un mecanismo que ayuda a que la diversidad de especies raras localmente no pueden ser extiguidas en etapas juveniles ademas de bajar su nivel de estres en el ambiente.Por lo que se puede deducir que las especies raras no pueden depender de la facilitación** 
+*Explicación: La facilitación es un mecanismo que ayuda a que la diversidad de especies raras localmente no pueden ser extiguidas en etapas juveniles ademas de bajar su nivel de estres en el ambiente.Por lo que se puede deducir que las plantas adultas no pueden depender de la facilitacion que vaya haver en su territorio.
 
 ## Muestra
 
 Replique el diseño realizado en el artículo en localidades del Ecuador y genere el archivo **rarespecies.csv**. 
 
 ```{r crd_anfibios}
-sitios = c("Sitio1", "Chuquitos", "Chompi")
-
+sitios = c("Loreto", "Francisco de Orellana", "Joya de los Sachas" "Lago Agrio")
 ```
 Explique el resultado muestra: 
 
 **Respuesta:**
-
+Se escogio estos 4 sitios que no se encuentran separados a más de 20 km para el previo estudio y el porque se escogio este parámetro es para que sea mínimos los cambios de las condiciones climáticas entre ellas.
 
 
 ## Variables
 ¿Cuáles son sus variables (dependiente(s) e independiente(s))? Explique cada una de las variables
 
-**Respuesta:**
+**Variable independiente: yeso **
+**Variable dependiente: plantas**
 
 
 ## Gráfica e hipótesis
@@ -94,11 +94,28 @@ En esta parte debe aplicar las regresiones lineal, linearizada y generalizada so
 Para responder esta pregunta debe generar las hipótesis y probar las hipótesis (código y explicación), asimismo visualizar con etiquetas adecuadas. Considere realizar lo siguiente:
 
 - Realizar un análisis exploratorio.
+```{r}
+data(mites)
+str(mites)
+summary(mites)
+```
+
 
 - Realizar regresiones lineales de cada variable de respuesta y variables efectoras, univariable o multivariable. Verifique los supuestos de la regresión. 
 
 - Realizar regresiones linearizadas de cada variable de respuesta y variables efectoras, univariable o multivariable. 
 
 - Realizar regresiones lineales generalizadas de cada variable de respuesta y variables efectoras, univariable o multivariable. 
+```{r}
+jabali <- read.table("s3_boar.txt", header = T)
+par(mfrow=c(1,2))
+
+boxplot(jabali$LengthCT ~ jabali$Tb, ylab = "Longitu cabeza- torax (cm)", xlab = "Presencia de Tuberculosis")
+
+plot(jabali$LengthCT, jabali$Tb, ylab = "Longitu cabeza- torax (cm)", xlab = "Presencia de Tuberculosis")
+reg <- lm(jabali$LengthCT ~ jabali$Tb)
+abline(reg)
+```
+
 
 - Comparar de la bondad de las regresiones. 
