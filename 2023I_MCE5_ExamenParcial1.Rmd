@@ -61,9 +61,8 @@ $$Ho$$La fase adulta de las plantas depende de la facilitación para su superviv
 Replique el diseño realizado en el artículo en localidades del Ecuador y genere el archivo **rarespecies.csv**. 
 
 ```{r crd_anfibios}
-sitios = c("Loreto", "Francisco de Orellana", "Joya de los Sachas" "Lago Agrio")
+sitios = c("Loreto", "Francisco de Orellana", "Joya de los Sachas" "Lagoagrio")
 ```
-Explique el resultado muestra: 
 
 **Respuesta:**
 Se escogio estos 4 sitios que no se encuentran separados a más de 20 km para el previo estudio y el porque se escogio este parámetro es para que sea mínimos los cambios de las condiciones climáticas entre ellas.
