@@ -54,7 +54,7 @@ En el estudio realizado por <a href="https://doi.org/10.1111/jvs.13185">Sanches 
 $$H0$$La facilitación interviene en la conservación de especies raras.
 $$Ha$$Las especies raras dependen del mecanismo de facilitación para su sobrevivencia.  
 
-*Explicación: La facilitación es un mecanismo que ayuda a que la diversidad de especies raras localmente no pueden ser extiguidas en etapas juveniles ademas de bajar su nivel de estres en el ambiente.Por lo que se puede deducir que las especies raras no pueden depender de la facilitación. 
+*Explicación: La facilitación es un mecanismo que ayuda a que la diversidad de especies raras localmente no pueden ser extiguidas en etapas juveniles ademas de bajar su nivel de estres en el ambiente.Por lo que se puede deducir que las especies raras no pueden depender de la facilitación** 
 
 ## Muestra
 
